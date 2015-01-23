@@ -2,9 +2,9 @@
 open System
 
 type Person(firstName: string, lastName: string, birthday: DateTime) = 
-    let mutable  hasDriverLicense = false // prywatne
+    let mutable  hasDriverLicense = false // private
 
-    member this.FirstName = firstName // publiczne
+    member this.FirstName = firstName // public
     member this.LastName = lastName
     member this.FullName = firstName + " " + lastName        
     member this.HasDriverLicense with get() = hasDriverLicense        
@@ -13,7 +13,7 @@ type Person(firstName: string, lastName: string, birthday: DateTime) =
         (asof - birthday).TotalDays / 365.0
 
     member this.GrantDriverLicense() =
-        hasDriverLicense <- true
+        hasDriverLicense <- true        
         ()
         
     member this.print() =

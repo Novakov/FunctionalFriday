@@ -5,7 +5,7 @@ using System.Reflection;
 [assembly: AssemblyDescriptionAttribute("Sample application which uses FAKE to build itself")]
 [assembly: AssemblyVersionAttribute("1.0.0")]
 [assembly: AssemblyInformationalVersionAttribute("1.0.0-dev")]
-[assembly: AssemblyMetadataAttribute("Commit","1f0fe851d9900ca8dddfdc8e59534025fd6dd557")]
+[assembly: AssemblyMetadataAttribute("Commit","19cde99d20d6cde91f954546c20eae9b8290e418")]
 namespace System {
     internal static class AssemblyVersionInformation {
         internal const string Version = "1.0.0";
